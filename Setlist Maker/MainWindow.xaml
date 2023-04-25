@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Setlist_Maker"
         mc:Ignorable="d"
-        Title="Setlist Maker" Height="450" Width="800">
+        Title="Setlist Maker" Height="450" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_Configure">
-                <MenuItem Header="_Bands" />
+                <MenuItem x:Name="mnuBandWindow" Header="_Bands" Click="mnuBandWindow_Click" />
                 <MenuItem Header="_Musics" />
                 <MenuItem Header="_Repertories" />
                 <MenuItem Header="_Setlist Models" />
@@ -41,7 +41,7 @@
                 <Label Content="Band:" HorizontalAlignment="Right" VerticalAlignment="Center" />
                 <Label Content="Repertory:" HorizontalAlignment="Right" Grid.Row="1" VerticalAlignment="Center"/>
                 <Label Content="Setlist Model:" HorizontalAlignment="Right" Grid.Row="2" VerticalAlignment="Center"/>
-                <ComboBox Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="0" VerticalAlignment="Center" Margin="16,0,16,0"/>
+                <ComboBox x:Name="cmbBand" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="0" VerticalAlignment="Center" Margin="16,0,16,0"/>
                 <ComboBox Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Center" Margin="16,0,16,0"/>
                 <ComboBox Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Center" Margin="16,0,16,0"/>
 
